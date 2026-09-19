@@ -3135,10 +3135,14 @@ if (isVideo) {
     video.volume = 1;
     video.loop = true;
     video.playsInline = true;
-    video.controls = true;
-    video.setAttribute('controlsList', 'nodownload noremoteplayback');
+    video.controls = false;
+    video.setAttribute('controlsList', 'nodownload noremoteplayback nofullscreen');
     video.disablePictureInPicture = true;
     video.setAttribute('playsinline', '');
+    video.style.cursor = 'pointer';
+    video.addEventListener('click', () => {
+        if (video.paused) { video.play().catch(() => {}); } else { video.pause(); }
+    });
     photoDiv.appendChild(video);
 
     video.play().catch(() => {});
