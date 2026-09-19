@@ -25,6 +25,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
 img,video{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
+button,a,input,textarea,select,[onclick],[role="button"]{pointer-events:auto!important;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-touch-callout:default}
 :root{
   --primary:#F8A4B8;--primary-dark:#E8839A;--primary-light:#FFDDE6;
   --secondary:#A8D8EA;--text-dark:#4A3F5C;--text-soft:#7A6F8C;
@@ -403,7 +404,6 @@ document.addEventListener('contextmenu',function(e){e.preventDefault()});
 document.addEventListener('copy',function(e){e.preventDefault()});
 document.addEventListener('cut',function(e){e.preventDefault()});
 document.addEventListener('dragstart',function(e){e.preventDefault()});
-document.addEventListener('selectstart',function(e){e.preventDefault()});
 document.addEventListener('keydown',function(e){
   var k=e.key?e.key.toLowerCase():'';
   var blockedCombo=(e.ctrlKey||e.metaKey)&&['c','x','u','s','p','a'].indexOf(k)!==-1;
