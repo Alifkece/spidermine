@@ -2018,4 +2018,1848 @@
         </section>
 
         <section id="music">
-            <span class="section-lab
+            <span class="section-label reveal"><span class="comic-burst blue">BAM! 🎵</span></span>
+            <h2 class="section-title reveal">Special Playlist</h2>
+            <p class="section-subtitle reveal">Songs that remind me of you 🎵</p>
+
+            <div class="player-card reveal" id="playerCard">
+                <div class="player-artwork">
+                    <div class="vinyl" id="vinylRecord"><div class="vinyl-center"></div></div>
+                </div>
+                <div class="player-track" id="trackName">Choose a song...</div>
+                <div class="player-artist" id="trackArtist">—</div>
+                <div class="player-progress" id="progressBg">
+                    <div class="player-progress-fill" id="progressFill"></div>
+                </div>
+                <div class="player-times">
+                    <span id="timeCur">0:00</span>
+                    <span id="timeTot">0:00</span>
+                </div>
+                <div class="player-controls">
+                    <button class="ctrl-btn" id="ctrlPrev">⏮</button>
+                    <button class="ctrl-btn ctrl-play" id="ctrlPlay">▶</button>
+                    <button class="ctrl-btn" id="ctrlNext">⏭</button>
+                </div>
+                <div class="eq-bars" aria-hidden="true">
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                </div>
+            </div>
+            <div class="playlist" id="playlistContainer"></div>
+        </section>
+
+        <section id="reasons">
+            <span class="section-label reveal"><span class="comic-burst">WHAM! 🕸️</span></span>
+            <h2 class="section-title reveal">Reasons I'm Grateful</h2>
+            <p class="section-subtitle reveal">Shake the jar and take a note 🕸️</p>
+
+            <div class="pjar-wrap reveal">
+                <div class="pjar-svg-wrap" id="pjarSvgWrap">
+                    <svg class="pjar-svg" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" id="pjarSvg">
+                        <defs>
+                            <linearGradient id="pjarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="rgba(240,244,255,0.10)" />
+                                <stop offset="40%" stop-color="rgba(240,244,255,0.28)" />
+                                <stop offset="100%" stop-color="rgba(240,244,255,0.08)" />
+                            </linearGradient>
+                            <linearGradient id="pjarLidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="rgba(230,36,41,0.75)" />
+                                <stop offset="100%" stop-color="rgba(183,28,28,0.55)" />
+                            </linearGradient>
+                            <radialGradient id="pjarGlowGrad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="rgba(230,36,41,0.28)" />
+                                <stop offset="100%" stop-color="rgba(230,36,41,0)" />
+                            </radialGradient>
+                        </defs>
+                        <circle cx="100" cy="130" r="110" fill="url(#pjarGlowGrad)" />
+                        <rect x="60" y="18" width="80" height="28" rx="8" fill="url(#pjarLidGrad)" stroke="#000" stroke-width="3" />
+                        <rect x="55" y="40" width="90" height="12" rx="5" fill="rgba(30,58,138,0.85)" stroke="#000" stroke-width="2.5" />
+                        <path d="M55 52 L145 52 L152 240 Q150 252 100 252 Q50 252 48 240 Z" fill="url(#pjarGrad)" stroke="#000" stroke-width="3" />
+                        <path d="M65 60 L70 230" stroke="rgba(255,255,255,0.2)" stroke-width="5" stroke-linecap="round" />
+                        <path d="M78 57 L81 235" stroke="rgba(255,255,255,0.12)" stroke-width="2.5" stroke-linecap="round" />
+                        <g opacity="0.95">
+                            <rect x="70" y="100" width="32" height="22" rx="5" fill="rgba(230,36,41,0.7)" stroke="#000" stroke-width="1.5" transform="rotate(-8 86 111)" />
+                            <rect x="105" y="130" width="28" height="20" rx="5" fill="rgba(74,123,200,0.75)" stroke="#000" stroke-width="1.5" transform="rotate(5 119 140)" />
+                            <rect x="75" y="155" width="30" height="21" rx="5" fill="rgba(230,36,41,0.65)" stroke="#000" stroke-width="1.5" transform="rotate(-4 90 165)" />
+                            <rect x="100" y="90" width="26" height="19" rx="5" fill="rgba(74,123,200,0.7)" stroke="#000" stroke-width="1.5" transform="rotate(10 113 99)" />
+                            <rect x="72" y="185" width="28" height="18" rx="5" fill="rgba(230,36,41,0.6)" stroke="#000" stroke-width="1.5" transform="rotate(3 86 194)" />
+                            <rect x="103" y="170" width="25" height="20" rx="5" fill="rgba(74,123,200,0.75)" stroke="#000" stroke-width="1.5" transform="rotate(-6 115 180)" />
+                        </g>
+                    </svg>
+                </div>
+                <button class="pjar-shake-btn" id="pjarShakeBtn">SHAKE JAR</button>
+                <p class="pjar-hint">Klik botol atau tombol untuk mengocok</p>
+            </div>
+        </section>
+
+        <section id="final">
+            <img src="kimmygift.com/images/spidey-deco-left.png" class="spidey-deco" style="top: 5%; left: 3%; width: 130px; animation-duration: 6s;" alt="">
+            <img src="kimmygift.com/images/spidey-deco-right.png" class="spidey-deco" style="bottom: 5%; right: 3%; width: 130px; animation-duration: 7s; animation-delay: 1s;" alt="">
+            <span class="comic-burst reveal">THE END? 🕸️</span>
+            <h1 class="final-title reveal">
+                <span>MAY YOUR LIFE BE</span><br>
+                <span class="accent">FILLED WITH LOVE</span><br>
+                <span>&amp; ADVENTURE 🕷️</span>
+            </h1>
+            <p class="final-message reveal">
+              Happy anniversary, my love. I hope that in the months and years to come, our relationship grows even stronger and better than before, and that it lasts forever amiinn.
+                <br><br>
+                You are the most beautiful gift in my life. Thank you for being you — whole, real, and so incredibly precious. I love you. 🤍
+            </p>
+            <div class="final-signature reveal">—  WITH ALL MY LOVE & PRAYERS 💕 —</div>
+        </section>
+    </div>
+
+    <div id="fireworks" class="hidden">
+        <canvas id="fwCanvas"></canvas>
+        <div class="fireworks-card">
+            <div class="emoji">🕷️</div>
+            <h2>HAPPY ANNIVERSARY<br>DEDEE!</h2>
+            <p>You are the most special person in my life 🤍</p>
+            <button id="fwClose">CLOSE ✕</button>
+        </div>
+    </div>
+
+    <div class="bp-modal-overlay" id="bpOverlay">
+        <div class="bp-modal-card" role="dialog" aria-modal="true" aria-labelledby="bpLabel" aria-describedby="bpText">
+            <button class="bp-modal-close" id="bpClose" type="button" aria-label="Tutup pesan">&times;</button>
+            <div class="bp-modal-bloom" id="bpModalBloom" aria-hidden="true"></div>
+            <p class="bp-m-label" id="bpLabel">Bunga</p>
+            <p class="bp-m-text" id="bpText">Pesan</p>
+            <hr class="bp-m-divider">
+            <button class="bp-modal-btn" id="bpOk" type="button">CLOSE</button>
+        </div>
+    </div>
+
+    <div class="pjar-modal-overlay hidden" id="pjarModalOverlay">
+        <div class="pjar-modal">
+            <span class="pjar-floating">🕷️</span>
+            <span class="pjar-floating">💕</span>
+            <span class="pjar-floating">🕸️</span>
+            <span class="pjar-heart-big">💖</span>
+            <div class="pjar-number" id="pjarModalNumber">#1</div>
+            <div class="pjar-text" id="pjarModalText">You are amazing.</div>
+            <button class="pjar-close-btn" id="pjarModalClose">THANK YOU</button>
+            <div class="pjar-counter" id="pjarModalCounter">1 of 14</div>
+        </div>
+    </div>
+
+    <script>
+        'use strict';
+
+        // ═══════════════════════════════════════════════
+        //  BACKGROUND CANVAS — SPIDEY WEB PARTICLES + SAKURA PETALS
+        //  (Sakura petals sekarang memakai warna tema Spiderman!)
+        // ═══════════════════════════════════════════════
+        (function backgroundParticles() {
+            const canvas = document.getElementById('sakuraCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let w, h;
+
+            // ─── SPIDEY / WEB PARTICLES ───
+            const spideyParticles = [];
+            const spideyColors = ['#E62429', '#1E3A8A', '#F0F4FF', '#B71C1C', '#4A7BC8'];
+            const glyphs = ['🕷️', '🕸️', '❤️', '💙', '⭐'];
+
+            // ─── SAKURA PETALS (warna tema Spiderman) ───
+            const petals = [];
+            // Palet warna: merah spidey, biru spidey, putih web, silver web
+            const petalColors = [
+                '#E62429', '#B71C1C', '#FF5A5A',   // reds
+                '#1E3A8A', '#4A7BC8', '#2B3A67',   // blues
+                '#F0F4FF', '#C8D4F0'               // web whites/silvers
+            ];
+            // Warna pusat petal (kontras)
+            const petalCenterColors = ['#F0F4FF', '#FFD700', '#FFFFFF', '#FFB7C5', '#C8D4F0'];
+
+            function resize() {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            class SpideyParticle {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * w;
+                    this.y = -20 - Math.random() * 100;
+                    this.size = 8 + Math.random() * 14;
+                    this.speedY = 0.4 + Math.random() * 0.9;
+                    this.speedX = (Math.random() - 0.5) * 0.7;
+                    this.rotation = Math.random() * Math.PI * 2;
+                    this.rotSpeed = (Math.random() - 0.5) * 0.03;
+                    this.opacity = 0.5 + Math.random() * 0.5;
+                    this.color = spideyColors[Math.floor(Math.random() * spideyColors.length)];
+                    this.isEmoji = Math.random() > 0.6;
+                    this.glyph = glyphs[Math.floor(Math.random() * glyphs.length)];
+                    this.sway = Math.random() * 100;
+                    this.swaySpeed = 0.01 + Math.random() * 0.025;
+                }
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX + Math.sin(this.sway) * 0.4;
+                    this.sway += this.swaySpeed;
+                    this.rotation += this.rotSpeed;
+                    if (this.y > h + 40) {
+                        this.reset();
+                        this.y = -20 - Math.random() * 100;
+                    }
+                    if (this.x < -40) this.x = w + 40;
+                    if (this.x > w + 40) this.x = -40;
+                }
+                draw() {
+                    ctx.save();
+                    ctx.translate(this.x, this.y);
+                    ctx.rotate(this.rotation);
+                    ctx.globalAlpha = this.opacity;
+                    if (this.isEmoji) {
+                        ctx.font = `${this.size}px serif`;
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillText(this.glyph, 0, 0);
+                    } else {
+                        const s = this.size;
+                        ctx.strokeStyle = this.color;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        for (let i = 0; i < 4; i++) {
+                            const a = (i / 4) * Math.PI * 2;
+                            ctx.moveTo(0, 0);
+                            ctx.lineTo(Math.cos(a) * s, Math.sin(a) * s);
+                        }
+                        ctx.stroke();
+                        ctx.beginPath();
+                        ctx.arc(0, 0, s * 0.5, 0, Math.PI * 2);
+                        ctx.stroke();
+                        ctx.beginPath();
+                        ctx.arc(0, 0, s * 0.85, 0, Math.PI * 2);
+                        ctx.stroke();
+                    }
+                    ctx.restore();
+                }
+            }
+
+            // ─── SAKURA PETAL — Spiderman Themed ───
+            class Petal {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * w;
+                    this.y = -20 - Math.random() * 100;
+                    this.size = 7 + Math.random() * 13;
+                    this.speedY = 0.4 + Math.random() * 0.8;
+                    this.speedX = (Math.random() - 0.5) * 0.6;
+                    this.rotation = Math.random() * Math.PI * 2;
+                    this.rotSpeed = (Math.random() - 0.5) * 0.02;
+                    this.opacity = 0.55 + Math.random() * 0.4;
+                    this.color = petalColors[Math.floor(Math.random() * petalColors.length)];
+                    this.centerColor = petalCenterColors[Math.floor(Math.random() * petalCenterColors.length)];
+                    this.sway = Math.random() * 100;
+                    this.swaySpeed = 0.01 + Math.random() * 0.02;
+                    this.glowSize = 6 + Math.random() * 8;
+                    this.alphaMod = 0.85 + Math.random() * 0.15;
+                }
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX + Math.sin(this.sway) * 0.3;
+                    this.sway += this.swaySpeed;
+                    this.rotation += this.rotSpeed;
+                    if (this.y > h + 30) {
+                        this.reset();
+                        this.y = -20 - Math.random() * 100;
+                    }
+                    if (this.x < -30) this.x = w + 30;
+                    if (this.x > w + 30) this.x = -30;
+                }
+                draw() {
+                    ctx.save();
+                    ctx.translate(this.x, this.y);
+                    ctx.rotate(this.rotation);
+                    ctx.globalAlpha = this.opacity * this.alphaMod;
+                    const s = this.size;
+
+                    // Glow effect untuk kesan premium
+                    ctx.shadowColor = this.color;
+                    ctx.shadowBlur = this.glowSize;
+                    ctx.fillStyle = this.color;
+
+                    // 5 petal sakura
+                    for (let i = 0; i < 5; i++) {
+                        const angle = (i / 5) * Math.PI * 2;
+                        const cx = Math.cos(angle) * s * 0.5;
+                        const cy = Math.sin(angle) * s * 0.5;
+                        ctx.beginPath();
+                        ctx.ellipse(cx, cy, s * 0.5, s * 0.3, angle, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+
+                    // Center dengan warna kontras
+                    ctx.shadowBlur = 0;
+                    ctx.fillStyle = this.centerColor;
+                    ctx.globalAlpha = this.opacity * 0.85;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, s * 0.14, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.restore();
+                }
+            }
+
+            // ─── INIT ───
+            for (let i = 0; i < 30; i++) {
+                const p = new SpideyParticle();
+                p.y = Math.random() * h;
+                spideyParticles.push(p);
+            }
+            for (let i = 0; i < 50; i++) {
+                const p = new Petal();
+                p.y = Math.random() * h;
+                petals.push(p);
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, w, h);
+                for (const p of petals) { p.update(); p.draw(); }
+                for (const p of spideyParticles) { p.update(); p.draw(); }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+
+        // ─── CONFIG ───
+        const CONFIG = {
+            PIN: '2008',
+            PLAYLIST: [
+                { name: 'About You', artist: 'The 1975',
+                    url: 'kimmygift.com/music/The%201975%20-%20About%20You%20(Official).mp3' },
+                { name: 'Shape of My Heart', artist: 'Backstreet Boys',
+                    url: 'kimmygift.com/music/Backstreet%20Boys%20-%20Shape%20of%20My%20Heart%20(Lyrics).mp3' },
+                { name: 'Merry Christmas, i miss you', artist: 'Alex',
+                    url: 'kimmygift.com/music/Merry%20Christmas,%20i%20miss%20you.mp3' }
+            ],
+            SCRAPBOOK: [
+                { caption: 'You are always beautiful, and your charm has truly won me over and allowed me to open my heart again. Beyond your beauty, you are also such a kind person—hehe. Please stay the same Araa I know and love, sweetheart.',
+                    sub: '❤️💕',
+                    url: 'kimmygift.com/images/mtyqw5cf_6433794d9462b20ebececd7ab6b70baa.mp4' },
+                { caption: 'You know, whenever you are by my side, everything feels so comfortable and safe. I love being in your arms and having you lean on my shoulder—I really hope moments like this keep happening again and again.',
+                    sub: '📸😂',
+                    url: 'kimmygift.com/images/mtyqw60r_366d574200c6dce59162bea25f1e2857.jpg' },
+                { caption: 'i said spidermine dan kamu nyaut gwenmine.. soo HAPPY ANNIVERSARY SPIDERMINEEEE!!',
+                    sub: '🕷️🕸️',
+                    url: 'kimmygift.com/images/mtyqw5qn_994c4fe60f790afea23be1775882f230.jpg',
+                    reveal: 'kimmygift.com/images/spidermine.jpeg' },
+                { caption: 'I feel comfortable and safe with you, my love. I hope we can be together forever—you make me happy, hehe. ',
+                    sub: '💐🤍',
+                    url: 'kimmygift.com/images/mtyqw6ak_561fe5872ed076a6823797d9c4088ece.mp4' }
+            ]
+        };
+
+        const STATE = {
+            pin: '',
+            audio: null,
+            currentTrack: 0,
+            isPlaying: false,
+            progressInterval: null,
+            openedReasons: new Set(),
+            reasonCount: 0,
+            musicStarted: false,
+            boxOpened: false,
+        };
+
+        const $ = id => document.getElementById(id);
+        const qsa = (sel, ctx) => (ctx || document).querySelectorAll(sel);
+
+        function initFallingLoves() {
+            const container = $('#loveContainer');
+            if (!container) return;
+            const loves = ['🕷️', '🕸️', '❤️', '💙', '💕', '🌸', '🕷️', '🌸'];
+            for (let i = 0; i < 22; i++) {
+                const el = document.createElement('div');
+                el.className = 'falling-love';
+                el.textContent = loves[Math.floor(Math.random() * loves.length)];
+                el.style.cssText =
+                    `left: ${Math.random() * 100}%; font-size: ${16 + Math.random() * 22}px; animation-duration: ${6 + Math.random() * 8}s; animation-delay: ${Math.random() * 10}s;`;
+                container.appendChild(el);
+            }
+        }
+
+        function startMusicOnInteraction() {
+            if (STATE.musicStarted) return;
+            STATE.musicStarted = true;
+
+            if (!STATE.audio) {
+                STATE.audio = new Audio();
+                const firstTrack = CONFIG.PLAYLIST[0];
+                STATE.audio.src = firstTrack.url;
+                STATE.audio.load();
+                STATE.currentTrack = 0;
+                const trackName = $('trackName');
+                const trackArtist = $('trackArtist');
+                if (trackName) trackName.textContent = firstTrack.name;
+                if (trackArtist) trackArtist.textContent = firstTrack.artist;
+            }
+
+            STATE.audio.play().catch(() => {});
+            STATE.isPlaying = true;
+            const playBtn = $('ctrlPlay');
+            const vinyl = $('vinylRecord');
+            const card = $('playerCard');
+            if (playBtn) playBtn.textContent = '⏸';
+            if (vinyl) vinyl.classList.add('playing');
+            if (card) card.classList.add('playing');
+            if (STATE.progressInterval) clearInterval(STATE.progressInterval);
+            STATE.progressInterval = setInterval(updateProgress, 100);
+
+            STATE.audio.addEventListener('ended', function() {
+                const nextBtn = $('ctrlNext');
+                if (nextBtn) nextBtn.click();
+            });
+
+            STATE.audio.addEventListener('loadedmetadata', function() {
+                const timeTot = $('timeTot');
+                if (timeTot) timeTot.textContent = formatTime(STATE.audio.duration);
+            });
+        }
+
+        function updateProgress() {
+            if (!STATE.audio || !STATE.audio.duration) return;
+            const pct = (STATE.audio.currentTime / STATE.audio.duration) * 100;
+            const fill = $('progressFill');
+            const cur = $('timeCur');
+            if (fill) fill.style.width = pct + '%';
+            const bg = $('progressBg');
+            if (bg) bg.style.setProperty('--seek-pos', pct + '%');
+            if (cur) cur.textContent = formatTime(STATE.audio.currentTime);
+        }
+
+        function formatTime(sec) {
+            if (isNaN(sec)) return '0:00';
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return m + ':' + (s < 10 ? '0' : '') + s;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const ls = $('loading-screen');
+                if (!ls) return;
+                ls.classList.add('fade-out');
+                setTimeout(function() {
+                    ls.classList.add('hidden');
+                    showPinScreen();
+                }, 600);
+            }, 1500);
+        });
+
+        function showPinScreen() {
+            const screen = $('pin-screen');
+            if (!screen) return;
+            screen.classList.remove('hidden');
+            initFallingLoves();
+
+            const dots = qsa('.pin-dot');
+            const clearBtn = $('pinClear');
+            const submitBtn = $('pinSubmit');
+            const errorEl = $('pinError');
+            const pad = $('pinPad');
+
+            function updateDots() {
+                dots.forEach((dot, i) => dot.classList.toggle('filled', i < STATE.pin.length));
+            }
+            function handleDigit(digit) {
+                if (STATE.pin.length < 4) {
+                    STATE.pin += digit;
+                    updateDots();
+                    if (errorEl) errorEl.classList.add('hidden');
+                }
+            }
+
+            pad.querySelectorAll('.pin-btn[data-digit]').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const digit = this.dataset.digit;
+                    if (digit !== undefined) handleDigit(digit);
+                });
+            });
+
+            if (clearBtn) clearBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                STATE.pin = STATE.pin.slice(0, -1);
+                updateDots();
+                if (errorEl) errorEl.classList.add('hidden');
+            });
+
+            if (submitBtn) submitBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (STATE.pin === CONFIG.PIN) {
+                    screen.classList.add('hidden');
+                    showGiftBox();
+                } else {
+                    if (errorEl) errorEl.classList.remove('hidden');
+                    STATE.pin = '';
+                    updateDots();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (screen.classList.contains('hidden')) return;
+                if (e.key >= '0' && e.key <= '9') { handleDigit(e.key); e.preventDefault(); }
+                else if (e.key === 'Backspace') {
+                    STATE.pin = STATE.pin.slice(0, -1); updateDots();
+                    if (errorEl) errorEl.classList.add('hidden');
+                    e.preventDefault();
+                } else if (e.key === 'Enter') {
+                    if (submitBtn) submitBtn.click();
+                    e.preventDefault();
+                }
+            });
+        }
+
+        function showGiftBox() {
+            const screen = $('giftbox-screen');
+            if (!screen) return;
+            screen.classList.remove('hidden');
+
+            const box = $('presentBox');
+            const lid = $('boxLid');
+            if (!box || !lid) return;
+
+            box.addEventListener('click', function openBox(e) {
+                e.stopPropagation();
+                if (STATE.boxOpened) return;
+                STATE.boxOpened = true;
+                startMusicOnInteraction();
+
+                box.classList.add('opened');
+                lid.classList.add('fly-away');
+                box.style.transition = 'transform 0.1s';
+                box.style.transform = 'scale(0.95)';
+                setTimeout(() => { box.style.transform = 'scale(1)'; }, 150);
+
+                const container = document.createElement('div');
+                container.className = 'explosion-container';
+                document.body.appendChild(container);
+
+                const loveEmojis = ['🕷️', '🕸️', '❤️', '💙', '💕', '💖', '🌸', '🕷️', '🕸️', '⭐', '🌸'];
+                const rect = box.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+
+                for (let i = 0; i < 30; i++) {
+                    const el = document.createElement('span');
+                    el.className = 'explosion-item';
+                    el.textContent = loveEmojis[Math.floor(Math.random() * loveEmojis.length)];
+                    const angle = Math.random() * Math.PI * 2;
+                    const dist = 40 + Math.random() * 180;
+                    const speed = 0.6 + Math.random() * 1.0;
+                    const tx1 = Math.cos(angle) * dist * 0.2 * speed;
+                    const ty1 = Math.sin(angle) * dist * 0.2 * speed - 30 * speed;
+                    const tx2 = Math.cos(angle + 0.2) * dist * 0.5 * speed;
+                    const ty2 = Math.sin(angle + 0.2) * dist * 0.5 * speed - 60 * speed;
+                    const tx3 = Math.cos(angle - 0.2) * dist * 0.8 * speed;
+                    const ty3 = Math.sin(angle - 0.2) * dist * 0.8 * speed - 90 * speed;
+                    const tx4 = Math.cos(angle + 0.3) * dist * 1.0 * speed;
+                    const ty4 = Math.sin(angle + 0.3) * dist * 1.0 * speed - 130 * speed;
+                    const size = 20 + Math.random() * 42;
+                    const delay = Math.random() * 0.15;
+                    const duration = 1.0 + Math.random() * 0.8;
+                    el.style.cssText = `
+                        left: ${cx}px; top: ${cy}px;
+                        font-size: ${size}px;
+                        --tx1: ${tx1}px; --ty1: ${ty1}px;
+                        --tx2: ${tx2}px; --ty2: ${ty2}px;
+                        --tx3: ${tx3}px; --ty3: ${ty3}px;
+                        --tx4: ${tx4}px; --ty4: ${ty4}px;
+                        animation-delay: ${delay}s;
+                        animation-duration: ${duration}s;
+                        animation-timing-function: cubic-bezier(0.22, 0.9, 0.36, 1);
+                    `;
+                    container.appendChild(el);
+                    setTimeout(() => el.remove(), (duration + delay) * 1000 + 200);
+                }
+
+                let created1 = 0;
+                const totalWave1 = 180, batchSize1 = 30;
+                function addWave1Batch() {
+                    const frag = document.createDocumentFragment();
+                    const end = Math.min(created1 + batchSize1, totalWave1);
+                    for (let i = created1; i < end; i++) {
+                        const el = document.createElement('span');
+                        el.className = 'explosion-item';
+                        el.textContent = loveEmojis[Math.floor(Math.random() * loveEmojis.length)];
+                        const angle = Math.random() * Math.PI * 2;
+                        const dist = 60 + Math.random() * 400;
+                        const speed = 0.5 + Math.random() * 0.9;
+                        const tx1 = Math.cos(angle) * dist * 0.2 * speed;
+                        const ty1 = Math.sin(angle) * dist * 0.2 * speed - 40 * speed;
+                        const tx2 = Math.cos(angle + 0.2) * dist * 0.5 * speed;
+                        const ty2 = Math.sin(angle + 0.2) * dist * 0.5 * speed - 70 * speed;
+                        const tx3 = Math.cos(angle - 0.2) * dist * 0.8 * speed;
+                        const ty3 = Math.sin(angle - 0.2) * dist * 0.8 * speed - 100 * speed;
+                        const tx4 = Math.cos(angle + 0.3) * dist * 1.0 * speed;
+                        const ty4 = Math.sin(angle + 0.3) * dist * 1.0 * speed - 140 * speed;
+                        const size = 16 + Math.random() * 44;
+                        const delay = 0.1 + Math.random() * 0.3;
+                        const duration = 1.2 + Math.random() * 0.9;
+                        el.style.cssText = `
+                            left: ${cx}px; top: ${cy}px;
+                            font-size: ${size}px;
+                            --tx1: ${tx1}px; --ty1: ${ty1}px;
+                            --tx2: ${tx2}px; --ty2: ${ty2}px;
+                            --tx3: ${tx3}px; --ty3: ${ty3}px;
+                            --tx4: ${tx4}px; --ty4: ${ty4}px;
+                            animation-delay: ${delay}s;
+                            animation-duration: ${duration}s;
+                        `;
+                        frag.appendChild(el);
+                        setTimeout(() => el.remove(), (duration + delay) * 1000 + 200);
+                    }
+                    container.appendChild(frag);
+                    created1 = end;
+                    if (created1 < totalWave1) requestAnimationFrame(addWave1Batch);
+                }
+
+                const colors = ['#E62429', '#1E3A8A', '#F0F4FF', '#B71C1C', '#4A7BC8', '#FF5A5A', '#2B3A67', '#FFD700', '#FFB7C5'];
+                let created2 = 0;
+                const totalWave2 = 80, batchSize2 = 20;
+                function addWave2Batch() {
+                    const frag = document.createDocumentFragment();
+                    const end = Math.min(created2 + batchSize2, totalWave2);
+                    for (let i = created2; i < end; i++) {
+                        const el = document.createElement('div');
+                        el.className = 'confetti-piece';
+                        const angle = Math.random() * Math.PI * 2;
+                        const dist = 80 + Math.random() * 380;
+                        const cx1 = Math.cos(angle) * dist * 0.25;
+                        const cy1 = Math.sin(angle) * dist * 0.25 - 40;
+                        const cx2 = Math.cos(angle + 0.4) * dist * 0.6;
+                        const cy2 = Math.sin(angle + 0.4) * dist * 0.6 - 70;
+                        const cx3 = Math.cos(angle + 0.6) * dist;
+                        const cy3 = Math.sin(angle + 0.6) * dist - 120;
+                        const size = 6 + Math.random() * 14;
+                        const rotation = Math.random() * 360;
+                        const delay = 0.1 + Math.random() * 0.3;
+                        const dur = 1.6 + Math.random() * 0.8;
+                        el.style.cssText = `
+                            left: ${cx}px; top: ${cy}px;
+                            width: ${size}px; height: ${size * (0.4 + Math.random() * 0.6)}px;
+                            background: ${colors[Math.floor(Math.random() * colors.length)]};
+                            border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+                            transform: rotate(${rotation}deg);
+                            --cx1: ${cx1}px; --cy1: ${cy1}px;
+                            --cx2: ${cx2}px; --cy2: ${cy2}px;
+                            --cx3: ${cx3}px; --cy3: ${cy3}px;
+                            animation-delay: ${delay}s;
+                            animation-duration: ${dur}s;
+                        `;
+                        frag.appendChild(el);
+                        setTimeout(() => el.remove(), (dur + delay) * 1000 + 200);
+                    }
+                    container.appendChild(frag);
+                    created2 = end;
+                    if (created2 < totalWave2) requestAnimationFrame(addWave2Batch);
+                }
+
+                requestAnimationFrame(addWave1Batch);
+                setTimeout(() => requestAnimationFrame(addWave2Batch), 200);
+
+                setTimeout(() => container.remove(), 4200);
+                setTimeout(() => {
+                    screen.classList.add('hidden');
+                    showMainContent();
+                }, 4200);
+            });
+        }
+
+        function showMainContent() {
+            const mc = $('main-content');
+            if (!mc) return;
+            mc.classList.remove('hidden');
+
+            initScrollProgress();
+            initTypewriter();
+            initLetterTypewriter();
+            initPremiumBouquet();
+            initScrapbook();
+            initTimelineObserver();
+            initMusicPlayer();
+            initPremiumJar();
+            initRevealObserver();
+            initFireworks();
+        }
+
+        function initScrollProgress() {
+            const bar = $('scroll-progress');
+            if (!bar) return;
+            document.addEventListener('scroll', () => {
+                const top = window.scrollY;
+                const height = document.documentElement.scrollHeight - window.innerHeight;
+                bar.style.width = (height > 0 ? (top / height) * 100 : 0) + '%';
+            });
+        }
+
+        function initTypewriter() {
+            const el = $('typewriter');
+            if (!el) return;
+            const texts = [
+                'The most special day of the year…',
+                'May all your wishes come true.',
+                'You are truly one of a kind, Araa.',
+                'Happy anniversary, my love! 💕'
+            ];
+            let idx = 0, charIdx = 0, deleting = false;
+
+            function tick() {
+                const full = texts[idx];
+                if (!deleting) {
+                    el.textContent = full.substring(0, charIdx + 1);
+                    charIdx++;
+                    if (charIdx === full.length) {
+                        deleting = true;
+                        setTimeout(tick, 2000);
+                        return;
+                    }
+                } else {
+                    el.textContent = full.substring(0, charIdx - 1);
+                    charIdx--;
+                    if (charIdx === 0) {
+                        deleting = false;
+                        idx = (idx + 1) % texts.length;
+                        setTimeout(tick, 400);
+                        return;
+                    }
+                }
+                setTimeout(tick, deleting ? 40 : 80);
+            }
+            setTimeout(tick, 600);
+        }
+
+        function initLetterTypewriter() {
+            const section = $('letter');
+            const nodes = Array.from(qsa('#letter .letter-para, #letter .ps-text'));
+            if (!section || !nodes.length) return;
+
+            const items = nodes.map(el => ({ el, chars: Array.from(el.textContent) }));
+            items.forEach(item => { item.el.textContent = ''; });
+
+            let started = false;
+            function typeNode(i) {
+                if (i >= items.length) return;
+                const { el, chars } = items[i];
+                el.classList.add('typing');
+                let c = 0;
+                (function tick() {
+                    el.textContent = chars.slice(0, c).join('');
+                    if (c < chars.length) {
+                        c++;
+                        setTimeout(tick, 14);
+                    } else {
+                        el.classList.remove('typing');
+                        setTimeout(() => typeNode(i + 1), 220);
+                    }
+                })();
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !started) {
+                        started = true;
+                        typeNode(0);
+                        observer.unobserve(section);
+                    }
+                });
+            }, { threshold: 0.25 });
+            observer.observe(section);
+        }
+
+        function initScrapbook() {
+            const grid = $('scrapbookGrid');
+            if (!grid) return;
+            CONFIG.SCRAPBOOK.forEach((p, index) => {
+                const item = document.createElement('div');
+                item.className = 'scrapbook-item';
+
+                const tape1 = document.createElement('div');
+                tape1.className = 'tape';
+                item.appendChild(tape1);
+                if (index % 2 === 0) {
+                    const tape2 = document.createElement('div');
+                    tape2.className = 'tape r';
+                    item.appendChild(tape2);
+                }
+
+               const wrap = document.createElement('div');
+wrap.className = 'photo-wrap';
+
+const isVideo = p.url.toLowerCase().endsWith('.mp4');
+const media = isVideo ? document.createElement('video') : document.createElement('img');
+
+media.src = p.url;
+media.alt = p.caption;
+
+if (isVideo) {
+    media.autoplay = true;
+    media.muted = true;
+    media.loop = true;
+    media.playsInline = true;
+    media.setAttribute('playsinline', '');
+    media.addEventListener('loadedmetadata', () => {
+        if (media.videoWidth && media.videoHeight) {
+            wrap.style.aspectRatio = `${media.videoWidth} / ${media.videoHeight}`;
+        }
+    });
+}
+
+wrap.appendChild(media);
+
+                const reveal = (!isVideo && p.reveal) ? initPhotoReveal(wrap, p.reveal) : null;
+
+                const cap = document.createElement('div');
+                cap.className = 'caption';
+                cap.innerHTML = `${p.caption} <small>${p.sub || ''}</small>`;
+
+                item.appendChild(wrap);
+                item.appendChild(cap);
+                item.addEventListener('click', () => {
+                    // Setelah usapan (drag/swipe), jangan anggap sebagai klik biasa
+                    if (reveal && reveal.consumeDragClick()) return;
+                    openPhotoModal(p);
+                });
+                grid.appendChild(item);
+            });
+        }
+
+        // Efek "mengusap foto": foto kedua (revealUrl) muncul hanya di jalur pointer/jari.
+        // Base layer = <img> yang sudah ada; overlay = <canvas> berisi foto reveal yang di-mask.
+        const REVEAL_IMG_CACHE = {}; // url -> { img, status, waiters } (dipakai bersama scrapbook & modal)
+
+        function initPhotoReveal(wrap, revealUrl) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext ? canvas.getContext('2d') : null;
+            const mask = document.createElement('canvas');
+            const mctx = mask.getContext ? mask.getContext('2d') : null;
+            if (!ctx || !mctx) return null; // browser tidak mendukung -> foto normal tetap tampil
+
+            const MAX_DPR = 2;           // batasi resolusi canvas supaya ringan di HP
+            const LAYER_SIZE = 1024;     // sisi terpanjang layer foto reveal (hemat memori)
+            const DRAG_THRESHOLD = 6;    // px gerakan minimum agar dianggap usapan, bukan klik
+            const BRUSH = 0.13;          // radius kuas relatif terhadap lebar foto
+            const FADE_HOLD = 150;       // ms jeda setelah dilepas sebelum mulai memudar
+            const FADE_MS = 600;         // ms durasi memudar kembali ke foto normal
+            const FADE_K = Math.log(50) / FADE_MS; // laju peluruhan eksponensial
+
+            canvas.className = 'reveal-canvas';
+            canvas.setAttribute('aria-hidden', 'true');
+            wrap.classList.add('has-reveal');
+            wrap.appendChild(canvas);
+
+            let layer = null;            // canvas offscreen: foto reveal sudah di-crop "cover"
+            let layerAspect = 1, srcImg = null;
+            let loadState = 'idle';      // idle | loading | ready | error
+            let sized = false;
+            let cssW = 0, dpr = 1, raf = 0;
+            let pointerId = null, dragging = false;
+            let startX = 0, startY = 0, lastX = 0, lastY = 0;
+            let suppressUntil = 0;
+            let dirty = false;           // true jika ada hasil usapan di mask
+            let fadeRaf = 0, fadeStart = 0, fadeLast = 0;
+
+            function scheduleRender() {
+                if (!raf) raf = requestAnimationFrame(render);
+            }
+
+            function render() {
+                raf = 0;
+                if (!sized) return;
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                if (!layer) return;
+                ctx.drawImage(layer, 0, 0, canvas.width, canvas.height);
+                ctx.globalCompositeOperation = 'destination-in'; // sisakan hanya area yang sudah diusap
+                ctx.drawImage(mask, 0, 0);
+                ctx.globalCompositeOperation = 'source-over';
+            }
+
+            function stopFade() {
+                if (fadeRaf) { cancelAnimationFrame(fadeRaf); fadeRaf = 0; }
+            }
+
+            // Setelah pointer dilepas: usapan memudar pelan-pelan sampai foto kembali normal
+            function startFade() {
+                stopFade();
+                const now = performance.now();
+                fadeStart = fadeLast = now + FADE_HOLD;
+                fadeRaf = requestAnimationFrame(fadeTick);
+            }
+
+            function fadeTick(now) {
+                fadeRaf = 0;
+                if (pointerId !== null || !sized) return; // sedang disentuh lagi -> batalkan
+                if (now < fadeStart) { fadeRaf = requestAnimationFrame(fadeTick); return; }
+                if (now - fadeStart >= FADE_MS) {
+                    mctx.clearRect(0, 0, mask.width, mask.height);
+                    dirty = false;
+                    render();
+                    return;
+                }
+                const dt = Math.min(now - fadeLast, 50);
+                fadeLast = now;
+                mctx.globalCompositeOperation = 'destination-out';
+                mctx.fillStyle = 'rgba(0,0,0,' + (1 - Math.exp(-FADE_K * dt)) + ')';
+                mctx.fillRect(0, 0, mask.width, mask.height);
+                mctx.globalCompositeOperation = 'source-over';
+                render();
+                fadeRaf = requestAnimationFrame(fadeTick);
+            }
+
+            function resize() {
+                const w = wrap.clientWidth, h = wrap.clientHeight;
+                if (!w || !h) return false;
+                const nd = Math.min(window.devicePixelRatio || 1, MAX_DPR);
+                const pw = Math.max(1, Math.round(w * nd)), ph = Math.max(1, Math.round(h * nd));
+                cssW = w; dpr = nd;
+                if (sized && canvas.width === pw && canvas.height === ph) return true;
+                let old = null;
+                if (sized) { // pertahankan hasil usapan saat ukuran layar berubah
+                    old = document.createElement('canvas');
+                    old.width = mask.width; old.height = mask.height;
+                    old.getContext('2d').drawImage(mask, 0, 0);
+                }
+                canvas.width = pw; canvas.height = ph;
+                mask.width = pw; mask.height = ph;
+                if (old) mctx.drawImage(old, 0, 0, pw, ph);
+                sized = true;
+                if (layer && srcImg && Math.abs(w / h - layerAspect) > 0.01) {
+                    try { buildLayer(srcImg); } catch (err) { /* layer lama tetap dipakai */ }
+                }
+                scheduleRender();
+                return true;
+            }
+
+            function buildLayer(img) {
+                const nw = img.naturalWidth, nh = img.naturalHeight;
+                if (!nw || !nh) return;
+                const w = wrap.clientWidth || 1, h = wrap.clientHeight || 1;
+                const aspect = w / h;
+                layerAspect = aspect;
+                const lw = aspect >= 1 ? LAYER_SIZE : Math.max(1, Math.round(LAYER_SIZE * aspect));
+                const lh = aspect >= 1 ? Math.max(1, Math.round(LAYER_SIZE / aspect)) : LAYER_SIZE;
+                const c = document.createElement('canvas');
+                c.width = lw; c.height = lh;
+                const lctx = c.getContext('2d');
+                if (!lctx) return;
+                // Sama persis dengan object-fit: cover; object-position: 50% 50% pada <img> dasar
+                const scale = Math.max(lw / nw, lh / nh);
+                const sw = lw / scale, sh = lh / scale;
+                lctx.imageSmoothingEnabled = true;
+                lctx.imageSmoothingQuality = 'high';
+                lctx.drawImage(img, (nw - sw) / 2, (nh - sh) / 2, sw, sh, 0, 0, lw, lh);
+                layer = c;
+            }
+
+            function onRevealLoaded(ok, img) {
+                if (!ok) { loadState = 'error'; return; } // foto normal tetap aman
+                srcImg = img;
+                try { buildLayer(img); loadState = layer ? 'ready' : 'error'; }
+                catch (err) { loadState = 'error'; }
+                scheduleRender();
+            }
+
+            function loadReveal() {
+                if (loadState !== 'idle') return;
+                loadState = 'loading';
+                let entry = REVEAL_IMG_CACHE[revealUrl];
+                if (!entry) {
+                    const img = new Image();
+                    entry = REVEAL_IMG_CACHE[revealUrl] = { img: img, status: 'loading', waiters: [] };
+                    const done = function (ok) {
+                        entry.status = ok ? 'ready' : 'error';
+                        if (!ok) delete REVEAL_IMG_CACHE[revealUrl]; // boleh dicoba lagi nanti
+                        entry.waiters.splice(0).forEach(function (fn) { fn(ok, img); });
+                    };
+                    img.onload = function () { done(true); };
+                    img.onerror = function () { done(false); };
+                    img.src = revealUrl;
+                }
+                if (entry.status === 'ready') onRevealLoaded(true, entry.img);
+                else entry.waiters.push(onRevealLoaded);
+            }
+
+            // Koordinat pointer -> piksel canvas. offsetX/Y sudah memperhitungkan rotate/scale CSS scrapbook.
+            function point(e) {
+                let x = e.offsetX, y = e.offsetY;
+                if (typeof x !== 'number' || typeof y !== 'number' || isNaN(x) || isNaN(y)) {
+                    const r = canvas.getBoundingClientRect();
+                    x = e.clientX - r.left; y = e.clientY - r.top;
+                }
+                const k = cssW ? canvas.width / cssW : dpr;
+                return { x: x * k, y: y * k };
+            }
+
+            function stamp(x, y) {
+                const r = Math.max(16 * dpr, canvas.width * BRUSH);
+                const g = mctx.createRadialGradient(x, y, 0, x, y, r);
+                g.addColorStop(0, 'rgba(0,0,0,1)');
+                g.addColorStop(0.6, 'rgba(0,0,0,0.9)');
+                g.addColorStop(1, 'rgba(0,0,0,0)');
+                mctx.fillStyle = g;
+                mctx.beginPath();
+                mctx.arc(x, y, r, 0, Math.PI * 2);
+                mctx.fill();
+                dirty = true;
+            }
+
+            function stroke(x0, y0, x1, y1) {
+                const r = Math.max(16 * dpr, canvas.width * BRUSH);
+                const step = Math.max(2, r * 0.25);
+                const dist = Math.hypot(x1 - x0, y1 - y0);
+                const n = Math.max(1, Math.ceil(dist / step));
+                for (let i = 0; i <= n; i++) {
+                    const t = i / n;
+                    stamp(x0 + (x1 - x0) * t, y0 + (y1 - y0) * t);
+                }
+            }
+
+            function onDown(e) {
+                if (pointerId !== null) return;
+                if (e.pointerType === 'mouse' && e.button !== 0) return;
+                suppressUntil = 0;
+                stopFade();
+                loadReveal();
+                if (!resize()) return;
+                const p = point(e);
+                pointerId = e.pointerId;
+                dragging = false;
+                startX = lastX = p.x; startY = lastY = p.y;
+                try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* aman diabaikan */ }
+            }
+
+            function onMove(e) {
+                if (e.pointerId !== pointerId || !sized) return;
+                const p = point(e);
+                if (!dragging) {
+                    if (Math.hypot(p.x - startX, p.y - startY) < DRAG_THRESHOLD * dpr) return; // masih dianggap klik
+                    dragging = true;
+                    canvas.classList.add('is-dragging');
+                    stroke(startX, startY, p.x, p.y);
+                } else {
+                    stroke(lastX, lastY, p.x, p.y);
+                }
+                lastX = p.x; lastY = p.y;
+                scheduleRender();
+            }
+
+            function onEnd(e) {
+                if (e.pointerId !== pointerId) return;
+                if (dragging) suppressUntil = Date.now() + 400; // cegah klik "hantu" yang membuka modal
+                pointerId = null; dragging = false;
+                canvas.classList.remove('is-dragging');
+                if (dirty) startFade();
+                try { canvas.releasePointerCapture(e.pointerId); } catch (err) { /* aman diabaikan */ }
+            }
+
+            canvas.addEventListener('pointerdown', onDown);
+            canvas.addEventListener('pointermove', onMove);
+            canvas.addEventListener('pointerup', onEnd);
+            canvas.addEventListener('pointercancel', onEnd);
+            canvas.addEventListener('lostpointercapture', onEnd);
+            canvas.addEventListener('dragstart', (e) => e.preventDefault());
+
+            if ('ResizeObserver' in window) new ResizeObserver(resize).observe(wrap);
+            else window.addEventListener('resize', resize);
+            resize();
+
+            // Muat foto reveal saat foto mendekati layar (fallback: langsung muat)
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver((entries) => {
+                    if (entries.some(en => en.isIntersecting)) { loadReveal(); io.disconnect(); }
+                }, { rootMargin: '300px' });
+                io.observe(wrap);
+            } else {
+                setTimeout(loadReveal, 800);
+            }
+
+            return {
+                consumeDragClick: function () {
+                    if (Date.now() < suppressUntil) { suppressUntil = 0; return true; }
+                    return false;
+                }
+            };
+        }
+
+        function openPhotoModal(p) {
+            const modal = document.createElement('div');
+            modal.className = 'photo-modal';
+            const box = document.createElement('div');
+            box.className = 'modal-box';
+            const close = document.createElement('button');
+            close.className = 'modal-close';
+            close.textContent = '✕';
+            // Musik latar dijeda selama video dibuka, lalu lanjut lagi begitu modal ditutup
+            let resumeMusic = false;
+            const onEsc = (e) => { if (e.key === 'Escape') closePhotoModal(); };
+            function closePhotoModal() {
+                document.removeEventListener('keydown', onEsc);
+                modal.remove();
+                if (resumeMusic) {
+                    resumeMusic = false;
+                    const musicBtn = $('ctrlPlay');
+                    if (musicBtn && !STATE.isPlaying) musicBtn.click();
+                }
+            }
+            close.addEventListener('click', closePhotoModal);
+            let revealHost = null;
+
+const photoDiv = document.createElement('div');
+photoDiv.className = 'modal-photo';
+
+const isVideo = p.url.toLowerCase().endsWith('.mp4');
+
+if (isVideo) {
+    const video = document.createElement('video');
+    video.src = p.url;
+    video.autoplay = true;
+    video.muted = false;
+    video.volume = 1;
+    video.loop = true;
+    video.playsInline = true;
+    video.controls = true;
+    video.setAttribute('playsinline', '');
+    photoDiv.appendChild(video);
+
+    video.play().catch(() => {});
+
+    const musicBtn = $('ctrlPlay');
+    if (STATE.isPlaying && musicBtn) { musicBtn.click(); resumeMusic = true; }
+} else {
+    const img = document.createElement('img');
+    img.src = p.url;
+    img.alt = p.caption;
+    if (p.reveal) {
+        // Foto ini punya efek usap-reveal: bungkus <img> dengan host untuk overlay canvas
+        revealHost = document.createElement('div');
+        revealHost.className = 'reveal-host';
+        revealHost.appendChild(img);
+        photoDiv.appendChild(revealHost);
+    } else {
+        photoDiv.appendChild(img);
+    }
+}
+
+            const cap = document.createElement('div');
+            cap.className = 'modal-caption';
+            cap.textContent = p.caption + (p.sub ? ' — ' + p.sub : '');
+
+            box.appendChild(close);
+            box.appendChild(photoDiv);
+            box.appendChild(cap);
+            modal.appendChild(box);
+            document.body.appendChild(modal);
+
+            // Efek usap-reveal juga aktif di foto yang dibuka (init setelah masuk DOM agar ukurannya terbaca)
+            const reveal = revealHost ? initPhotoReveal(revealHost, p.reveal) : null;
+
+            modal.addEventListener('click', (e) => {
+                if (reveal && reveal.consumeDragClick()) return; // lepas usapan di luar foto jangan menutup modal
+                if (e.target === modal) closePhotoModal();
+            });
+            document.addEventListener('keydown', onEsc);
+        }
+
+        function initTimelineObserver() {
+            const items = qsa('.timeline-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const delay = parseInt(entry.target.dataset.delay) || 0;
+                        setTimeout(() => entry.target.classList.add('visible'), delay);
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: '0px 0px -20px 0px' });
+            items.forEach(item => observer.observe(item));
+        }
+
+        function initMusicPlayer() {
+            const playlist = CONFIG.PLAYLIST;
+            const trackName = $('trackName');
+            const trackArtist = $('trackArtist');
+            const playBtn = $('ctrlPlay');
+            const prevBtn = $('ctrlPrev');
+            const nextBtn = $('ctrlNext');
+            const timeTot = $('timeTot');
+            const progressBg = $('progressBg');
+            const vinyl = $('vinylRecord');
+            const card = $('playerCard');
+            const container = $('playlistContainer');
+
+            if (!playBtn) return;
+
+            if (!STATE.audio) {
+                STATE.audio = new Audio();
+                const firstTrack = playlist[0];
+                STATE.audio.src = firstTrack.url;
+                STATE.audio.load();
+                STATE.currentTrack = 0;
+                if (trackName) trackName.textContent = firstTrack.name;
+                if (trackArtist) trackArtist.textContent = firstTrack.artist;
+            } else {
+                const currentTrack = playlist[STATE.currentTrack];
+                if (currentTrack) {
+                    if (trackName) trackName.textContent = currentTrack.name;
+                    if (trackArtist) trackArtist.textContent = currentTrack.artist;
+                }
+                if (STATE.isPlaying) {
+                    if (playBtn) playBtn.textContent = '⏸';
+                    if (vinyl) vinyl.classList.add('playing');
+                    if (card) card.classList.add('playing');
+                } else {
+                    if (playBtn) playBtn.textContent = '▶';
+                    if (vinyl) vinyl.classList.remove('playing');
+                    if (card) card.classList.remove('playing');
+                }
+                if (timeTot && STATE.audio.duration) timeTot.textContent = formatTime(STATE.audio.duration);
+            }
+
+            function loadTrack(index) {
+                if (index < 0) index = playlist.length - 1;
+                if (index >= playlist.length) index = 0;
+                const track = playlist[index];
+                if (!track) return;
+                STATE.audio.src = track.url;
+                STATE.audio.load();
+                if (trackName) trackName.textContent = track.name;
+                if (trackArtist) trackArtist.textContent = track.artist;
+                STATE.currentTrack = index;
+                updatePlaylistActive();
+                if (STATE.isPlaying) STATE.audio.play().catch(() => {});
+            }
+
+            function togglePlay() {
+                if (!STATE.audio.src) { loadTrack(0); return; }
+                if (STATE.isPlaying) {
+                    STATE.audio.pause();
+                    STATE.isPlaying = false;
+                    if (playBtn) playBtn.textContent = '▶';
+                    if (vinyl) vinyl.classList.remove('playing');
+                    if (card) card.classList.remove('playing');
+                    clearInterval(STATE.progressInterval);
+                } else {
+                    STATE.audio.play().catch(() => {});
+                    STATE.isPlaying = true;
+                    if (playBtn) playBtn.textContent = '⏸';
+                    if (vinyl) vinyl.classList.add('playing');
+                    if (card) card.classList.add('playing');
+                    STATE.progressInterval = setInterval(updateProgress, 100);
+                }
+            }
+
+            function updatePlaylistActive() {
+                if (!container) return;
+                qsa('.playlist-item', container).forEach((el, i) => {
+                    el.classList.toggle('active', i === STATE.currentTrack);
+                });
+            }
+
+            function renderPlaylist() {
+                if (!container) return;
+                container.innerHTML = '';
+                playlist.forEach((track, i) => {
+                    const div = document.createElement('div');
+                    div.className = `playlist-item ${i === STATE.currentTrack ? 'active' : ''}`;
+                    div.innerHTML = `
+                        <span style="font-size:22px;">🕷️</span>
+                        <span class="pl-name">${track.name}</span>
+                        <span class="pl-artist">${track.artist}</span>
+                    `;
+                    div.addEventListener('click', () => {
+                        loadTrack(i);
+                        if (!STATE.isPlaying) togglePlay();
+                        else STATE.audio.play().catch(() => {});
+                    });
+                    container.appendChild(div);
+                });
+            }
+
+            if (playBtn) playBtn.addEventListener('click', togglePlay);
+            if (prevBtn) prevBtn.addEventListener('click', () => {
+                loadTrack(STATE.currentTrack - 1);
+                if (STATE.isPlaying) STATE.audio.play().catch(() => {});
+            });
+            if (nextBtn) nextBtn.addEventListener('click', () => {
+                loadTrack(STATE.currentTrack + 1);
+                if (STATE.isPlaying) STATE.audio.play().catch(() => {});
+            });
+            if (progressBg) {
+                const fillEl = $('progressFill');
+                const curEl = $('timeCur');
+                let scrubbing = false;
+                function seekTo(clientX) {
+                    if (!STATE.audio.duration) return;
+                    const rect = progressBg.getBoundingClientRect();
+                    const pct = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+                    STATE.audio.currentTime = pct * STATE.audio.duration;
+                    if (fillEl) fillEl.style.width = (pct * 100) + '%';
+                    progressBg.style.setProperty('--seek-pos', (pct * 100) + '%');
+                    if (curEl) curEl.textContent = formatTime(STATE.audio.currentTime);
+                }
+                progressBg.addEventListener('pointerdown', (e) => {
+                    scrubbing = true;
+                    try { progressBg.setPointerCapture(e.pointerId); } catch (err) {}
+                    seekTo(e.clientX);
+                    e.preventDefault();
+                });
+                progressBg.addEventListener('pointermove', (e) => {
+                    if (scrubbing) seekTo(e.clientX);
+                });
+                const endScrub = (e) => {
+                    if (!scrubbing) return;
+                    scrubbing = false;
+                    try { progressBg.releasePointerCapture(e.pointerId); } catch (err) {}
+                };
+                progressBg.addEventListener('pointerup', endScrub);
+                progressBg.addEventListener('pointercancel', endScrub);
+            }
+
+            renderPlaylist();
+            if (playlist.length && (!timeTot.textContent || timeTot.textContent === '0:00')) {
+                if (STATE.audio.duration) timeTot.textContent = formatTime(STATE.audio.duration);
+                else STATE.audio.addEventListener('loadedmetadata', function() {
+                    timeTot.textContent = formatTime(STATE.audio.duration);
+                });
+            }
+        }
+
+        function initRevealObserver() {
+            const els = qsa('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+            }, { threshold: 0.15 });
+            els.forEach(el => observer.observe(el));
+        }
+
+        function initFireworks() {
+            const overlay = $('fireworks');
+            const canvas = $('fwCanvas');
+            const closeBtn = $('fwClose');
+            if (!overlay || !canvas) return;
+
+            let ctx = canvas.getContext('2d');
+            let w, h, particles = [];
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                w = canvas.width; h = canvas.height;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            function createExplosion(x, y) {
+                const colors = ['#E62429', '#1E3A8A', '#F0F4FF', '#B71C1C', '#4A7BC8', '#FFB7C5'];
+                for (let i = 0; i < 45; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = Math.random() * 6 + 2;
+                    particles.push({
+                        x, y,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed - Math.random() * 2,
+                        life: 1,
+                        decay: 0.008 + Math.random() * 0.015,
+                        size: 2 + Math.random() * 4,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                    });
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, w, h);
+                if (Math.random() < 0.04) createExplosion(Math.random() * w, Math.random() * h * 0.6);
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.x += p.vx; p.y += p.vy; p.vy += 0.04; p.life -= p.decay;
+                    if (p.life <= 0) { particles.splice(i, 1); continue; }
+                    ctx.globalAlpha = p.life;
+                    ctx.fillStyle = p.color;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.globalAlpha = 1;
+                requestAnimationFrame(animate);
+            }
+
+            setTimeout(() => {
+                overlay.classList.remove('hidden');
+                animate();
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(() => createExplosion(Math.random() * w, Math.random() * h * 0.5), i * 200);
+                }
+            }, 4000);
+
+            if (closeBtn) closeBtn.addEventListener('click', () => overlay.classList.add('hidden'));
+        }
+
+        function initPremiumBouquet() {
+            const container = $('bpBouquet');
+            const parallax = $('bpParallax');
+            const svg = $('bpStems');
+            const overlay = $('bpOverlay');
+            const mBloom = $('bpModalBloom');
+            const mLabel = $('bpLabel');
+            const mText = $('bpText');
+            const mClose = $('bpClose');
+            const mOk = $('bpOk');
+
+            if (!container || !svg) return;
+
+            const layers = {
+                back: document.querySelector('.bp-back-flowers'),
+                mid: document.querySelector('.bp-mid-flowers'),
+                front: document.querySelector('.bp-front-flowers')
+            };
+
+            const SVGNS = 'http://www.w3.org/2000/svg';
+
+            const PALETTES = {
+                blush:     ['#fff7f5', '#fbdcde', '#f2b8bf', '#dd95a0', '#bd7381'],
+                dusty:     ['#fdf2f1', '#f7d3d6', '#e8aeb6', '#cd8895', '#a86574'],
+                ivory:     ['#fffdfa', '#fdf5e9', '#f7e6d0', '#e9cfae', '#d3b28b'],
+                champagne: ['#fffbf4', '#fbeedb', '#f2ddbe', '#e0c39a', '#c4a377'],
+                cream:     ['#fffcf8', '#fbeedf', '#f2dcc6', '#e0c2a4', '#c4a184'],
+                rose:      ['#fff5f3', '#fbd6d3', '#f0aaa7', '#d8837f', '#b45f60']
+            };
+
+            const KINDS = {
+                rose: {
+                    core: 15,
+                    rings: [
+                        { n: 9, w: 54, h: 60, push: 0, off: 0,  ci: 0 },
+                        { n: 8, w: 46, h: 52, push: 3, off: 22, ci: 1 },
+                        { n: 7, w: 35, h: 41, push: 5, off: 11, ci: 2 },
+                        { n: 5, w: 23, h: 27, push: 7, off: 0,  ci: 3 }
+                    ]
+                },
+                peony: {
+                    core: 13,
+                    rings: [
+                        { n: 11, w: 53, h: 47, push: 0, off: 0,  ci: 0 },
+                        { n: 9,  w: 47, h: 43, push: 4, off: 19, ci: 1 },
+                        { n: 7,  w: 37, h: 35, push: 6, off: 9,  ci: 2 },
+                        { n: 5,  w: 25, h: 25, push: 8, off: 0,  ci: 3 }
+                    ]
+                }
+            };
+
+            const flowers = [
+                { id: 1, name: 'Peony Ivory', x: 50, y: 19, s: 23, kind: 'peony', pal: 'ivory', rot: -7, layer: 'back',
+                  msg: 'Kamu adalah tempat pulang yang paling tenang. Di dekatmu, dunia selalu terasa lebih lembut.' },
+                { id: 2, name: 'Rose Blush', x: 29, y: 28, s: 21, kind: 'rose', pal: 'blush', rot: -13, layer: 'back',
+                  msg: 'Setiap kali aku melihatmu, ada rasa syukur yang tidak pernah habis. Terima kasih sudah ada.' },
+                { id: 3, name: 'Rose Blush', x: 71, y: 28, s: 21, kind: 'rose', pal: 'blush', rot: 13, layer: 'back',
+                  msg: 'Terima kasih sudah bertahan, tumbuh, dan tetap bersinar sampai hari ini.' },
+                { id: 4, name: 'Rose Dusty', x: 14, y: 41, s: 20, kind: 'rose', pal: 'dusty', rot: -19, layer: 'mid',
+                  msg: 'Kamu cantikk bukan hanya hari ini. Kamu imutt di setiap versi dirimu, di setiap musimnya.' },
+                { id: 5, name: 'Rose Dusty', x: 86, y: 41, s: 20, kind: 'rose', pal: 'dusty', rot: 19, layer: 'mid',
+                  msg: 'Aku suka caramu tertawa. Itu suara paling favorit di duniaku.' },
+                { id: 6, name: 'Peony Champagne', x: 50, y: 35, s: 24, kind: 'peony', pal: 'champagne', rot: 4, layer: 'mid',
+                  msg: 'Kamu adalah alasan aku percaya bahwa hal-hal baik itu nyata dan pantas untuk ditunggu.' },
+                { id: 7, name: 'Rose Cream', x: 30, y: 52, s: 20, kind: 'rose', pal: 'cream', rot: -9, layer: 'front',
+                  msg: 'Semoga harimu selembut kelopak ini, dan sehangat pelukan yang selalu kamu berikan.' },
+                { id: 8, name: 'Rose Cream', x: 70, y: 52, s: 20, kind: 'rose', pal: 'cream', rot: 9, layer: 'front',
+                  msg: 'Jangan lupa istirahat. Kamu sudah melakukan yang terbaik hari ini, dan itu lebih dari cukup.' },
+                { id: 9, name: 'Rose Rouge', x: 50, y: 47, s: 26, kind: 'rose', pal: 'rose', rot: 0, layer: 'front',
+                  msg: 'Aku mencintaimu dengan cara yang tenang, dalam, dan tidak pernah setengah-setengah.' },
+                { id: 10, name: 'Rose Blush', x: 39, y: 63, s: 15, kind: 'rose', pal: 'blush', rot: -24, layer: 'front',
+                  msg: 'Kamu lebih berani dari yang kamu kira, dan lebih kuat dari yang kamu rasakan.' },
+                { id: 11, name: 'Rose Blush', x: 61, y: 63, s: 15, kind: 'rose', pal: 'blush', rot: 24, layer: 'front',
+                  msg: 'Selalu ada aku, di setiap bab cerita yang kamu tulis.' }
+            ];
+
+            function updateUnit() {
+                const w = container.clientWidth;
+                if (w > 0) container.style.setProperty('--u', (w / 100).toFixed(4) + 'px');
+            }
+            updateUnit();
+            if (typeof ResizeObserver !== 'undefined') {
+                try { new ResizeObserver(updateUnit).observe(container); }
+                catch (e) { window.addEventListener('resize', updateUnit); }
+            } else {
+                window.addEventListener('resize', updateUnit);
+            }
+            window.addEventListener('orientationchange', () => setTimeout(updateUnit, 220));
+            window.addEventListener('load', updateUnit);
+
+            const defs = document.createElementNS(SVGNS, 'defs');
+            defs.innerHTML =
+                '<linearGradient id="bpStemGrad" x1="0" y1="1" x2="0" y2="0">' +
+                    '<stop offset="0" stop-color="#5d7a53"/>' +
+                    '<stop offset="0.55" stop-color="#75945f"/>' +
+                    '<stop offset="1" stop-color="#93b07c"/>' +
+                '</linearGradient>' +
+                '<linearGradient id="bpLeafGradA" x1="0" y1="1" x2="0" y2="0">' +
+                    '<stop offset="0" stop-color="#6f8f60"/>' +
+                    '<stop offset="1" stop-color="#aecaa0"/>' +
+                '</linearGradient>' +
+                '<linearGradient id="bpLeafGradB" x1="0" y1="1" x2="0" y2="0">' +
+                    '<stop offset="0" stop-color="#5f7f55"/>' +
+                    '<stop offset="1" stop-color="#9aba88"/>' +
+                '</linearGradient>';
+            svg.appendChild(defs);
+
+            function qPoint(p0, c, p1, t) {
+                const mt = 1 - t;
+                return {
+                    x: mt * mt * p0.x + 2 * mt * t * c.x + t * t * p1.x,
+                    y: mt * mt * p0.y + 2 * mt * t * c.y + t * t * p1.y
+                };
+            }
+            function qTangent(p0, c, p1, t) {
+                const mt = 1 - t;
+                return {
+                    x: 2 * mt * (c.x - p0.x) + 2 * t * (p1.x - c.x),
+                    y: 2 * mt * (c.y - p0.y) + 2 * t * (p1.y - c.y)
+                };
+            }
+
+            const BIND = { x: 50, y: 95 };
+            const LEAF_D = 'M0,0 C3.2,-3.4 4.1,-9.2 0,-14 C-4.1,-9.2 -3.2,-3.4 0,0 Z';
+
+            flowers.forEach(function (f, i) {
+                const p0 = BIND;
+                const p1 = { x: f.x, y: f.y * 1.25 };
+                const c = {
+                    x: p0.x + (p1.x - p0.x) * 0.30,
+                    y: p0.y + (p1.y - p0.y) * 0.80
+                };
+                const d = 'M ' + p0.x + ' ' + p0.y + ' Q ' + c.x.toFixed(2) + ' ' + c.y.toFixed(2) + ' ' + p1.x.toFixed(2) + ' ' + p1.y.toFixed(2);
+                const path = document.createElementNS(SVGNS, 'path');
+                path.setAttribute('d', d);
+                path.setAttribute('fill', 'none');
+                path.setAttribute('stroke', 'url(#bpStemGrad)');
+                path.setAttribute('stroke-width', f.layer === 'back' ? '0.72' : (f.layer === 'mid' ? '0.86' : '1.00'));
+                path.setAttribute('stroke-linecap', 'round');
+                path.setAttribute('pathLength', '100');
+                path.setAttribute('class', 'bp-stem');
+                path.style.setProperty('--d', (0.34 + i * 0.045).toFixed(2) + 's');
+                svg.appendChild(path);
+
+                const leafCount = (f.layer === 'back') ? 1 : 2;
+                for (let k = 0; k < leafCount; k++) {
+                    let t = 0.44 + k * 0.24 + (i % 3) * 0.035;
+                    if (t > 0.92) t = 0.92;
+                    const pt = qPoint(p0, c, p1, t);
+                    const tg = qTangent(p0, c, p1, t);
+                    const baseAngle = Math.atan2(tg.x, -tg.y) * 180 / Math.PI;
+                    const side = ((i + k) % 2 === 0) ? -1 : 1;
+                    const angle = baseAngle + side * (34 + (i % 3) * 9);
+                    const scale = (0.50 + (f.s / 26) * 0.42) * (1 - t * 0.20);
+
+                    const g = document.createElementNS(SVGNS, 'g');
+                    g.setAttribute('transform',
+                        'translate(' + pt.x.toFixed(2) + ' ' + pt.y.toFixed(2) + ') rotate(' + angle.toFixed(1) + ') scale(' + scale.toFixed(3) + ')');
+
+                    const leaf = document.createElementNS(SVGNS, 'path');
+                    leaf.setAttribute('d', LEAF_D);
+                    leaf.setAttribute('fill', ((i + k) % 2 === 0) ? 'url(#bpLeafGradA)' : 'url(#bpLeafGradB)');
+                    leaf.setAttribute('class', 'bp-leaf');
+                    leaf.style.setProperty('--d', (0.72 + i * 0.05 + k * 0.08).toFixed(2) + 's');
+                    g.appendChild(leaf);
+                    svg.appendChild(g);
+                }
+            });
+
+            const flowerButtons = [];
+            flowers.forEach(function (f, i) {
+                const pal = PALETTES[f.pal];
+                const kind = KINDS[f.kind];
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'bp-flower';
+                btn.style.setProperty('--x', f.x);
+                btn.style.setProperty('--y', f.y);
+                btn.style.setProperty('--s', f.s);
+                btn.style.setProperty('--rot', f.rot + 'deg');
+                btn.style.setProperty('--d', (0.85 + i * 0.09).toFixed(2) + 's');
+                btn.setAttribute('tabindex', '0');
+                btn.setAttribute('aria-label', 'Bunga ' + f.name + '. Ketuk untuk membaca pesannya.');
+
+                const bloom = document.createElement('span');
+                bloom.className = 'bp-bloom';
+
+                kind.rings.forEach(function (ring, ri) {
+                    const n = ring.n, step = 360 / n, ci = ring.ci;
+                    for (let p = 0; p < n; p++) {
+                        const petal = document.createElement('span');
+                        petal.className = 'bp-petal';
+                        const jitter = ((p * 37 + i * 19 + ri * 7) % 11) - 5;
+                        const rot = p * step + ring.off + ri * 9 + (i * 13) % 17;
+                        petal.style.setProperty('--r', rot.toFixed(1) + 'deg');
+                        petal.style.setProperty('--tw', (jitter * 0.55).toFixed(2) + 'deg');
+                        petal.style.setProperty('--pw', (ring.w + jitter * 0.75).toFixed(2));
+                        petal.style.setProperty('--ph', (ring.h + jitter * 0.55).toFixed(2));
+                        petal.style.setProperty('--push', ring.push);
+                        petal.style.setProperty('--c1', pal[Math.min(ci, 4)]);
+                        petal.style.setProperty('--c2', pal[Math.min(ci + 1, 4)]);
+                        petal.style.setProperty('--c3', pal[Math.min(ci + 2, 4)]);
+                        bloom.appendChild(petal);
+                    }
+                });
+
+                const core = document.createElement('span');
+                core.className = 'bp-core';
+                core.style.setProperty('--cs', kind.core);
+                core.style.setProperty('--c1', pal[3]);
+                core.style.setProperty('--c2', pal[4]);
+                bloom.appendChild(core);
+
+                btn.appendChild(bloom);
+                btn.addEventListener('click', () => openModal(i));
+                layers[f.layer].appendChild(btn);
+                flowerButtons.push(btn);
+            });
+
+            const MAX_SHIFT = 7;
+            let targetX = 0, targetY = 0, currentX = 0, currentY = 0, rafId = null;
+            function applyParallax() {
+                currentX += (targetX - currentX) * 0.14;
+                currentY += (targetY - currentY) * 0.14;
+                if (Math.abs(targetX - currentX) < 0.03 && Math.abs(targetY - currentY) < 0.03) {
+                    currentX = targetX; currentY = targetY; rafId = null;
+                } else {
+                    rafId = requestAnimationFrame(applyParallax);
+                }
+                parallax.style.transform = 'translate3d(' + currentX.toFixed(2) + 'px,' + currentY.toFixed(2) + 'px,0)';
+            }
+            function requestParallax() { if (rafId === null) rafId = requestAnimationFrame(applyParallax); }
+
+            if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                window.addEventListener('mousemove', function (e) {
+                    const rect = container.getBoundingClientRect();
+                    if (rect.width === 0) return;
+                    let nx = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+                    let ny = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+                    nx = Math.max(-1, Math.min(1, nx));
+                    ny = Math.max(-1, Math.min(1, ny));
+                    targetX = -nx * MAX_SHIFT;
+                    targetY = -ny * (MAX_SHIFT * 0.6);
+                    requestParallax();
+                }, { passive: true });
+                window.addEventListener('mouseleave', function () {
+                    targetX = 0; targetY = 0; requestParallax();
+                });
+            }
+
+            let lastFocused = null;
+            let isOpen = false;
+
+            function openModal(index) {
+                const f = flowers[index];
+                if (!f) return;
+                mLabel.textContent = f.name;
+                mText.textContent = f.msg;
+                mBloom.innerHTML = '';
+                const src = flowerButtons[index];
+                if (src) {
+                    const bloomEl = src.querySelector('.bp-bloom');
+                    if (bloomEl) mBloom.appendChild(bloomEl.cloneNode(true));
+                }
+                lastFocused = document.activeElement;
+                overlay.classList.add('open');
+                isOpen = true;
+                document.documentElement.style.overflow = 'hidden';
+                setTimeout(() => { try { mClose.focus({ preventScroll: true }); } catch (e) { mClose.focus(); } }, 70);
+            }
+            function closeModal() {
+                if (!isOpen) return;
+                isOpen = false;
+                overlay.classList.remove('open');
+                document.documentElement.style.overflow = '';
+                if (lastFocused && typeof lastFocused.focus === 'function') {
+                    try { lastFocused.focus({ preventScroll: true }); } catch (e) { lastFocused.focus(); }
+                }
+                lastFocused = null;
+            }
+            if (mClose) mClose.addEventListener('click', closeModal);
+            if (mOk) mOk.addEventListener('click', closeModal);
+            if (overlay) overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+            document.addEventListener('keydown', (e) => {
+                if (!isOpen) return;
+                if (e.key === 'Escape' || e.key === 'Esc') { e.preventDefault(); closeModal(); }
+                if (e.key === 'Tab') {
+                    const focusables = overlay.querySelectorAll('button, [href], input, [tabindex]:not([tabindex="-1"])');
+                    if (!focusables.length) return;
+                    const first = focusables[0], last = focusables[focusables.length - 1];
+                    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+                }
+            });
+
+            setTimeout(updateUnit, 60);
+            setTimeout(updateUnit, 400);
+        }
+
+        function initPremiumJar() {
+            const REASONS = [
+                'Tawamu selalu bisa membuat hari yang buruk terasa lebih ringan. Senyummu adalah obat terbaik.',
+                'Cara kamu peduli pada orang lain itu langka dan berharga. Kamu punya hati yang besar.',
+                'Kekuatanmu di saat sulit selalu menginspirasiku. Kamu lebih kuat dari yang kamu tahu.',
+                'Kamu membuat momen sederhana terasa istimewa. Bersamamu, segalanya terasa lebih indah.',
+                'Kejujuranmu menunjukkan betapa kuatnya karaktermu. Kamu selalu tulus dan apa adanya.',
+                'Kreativitasmu selalu memukauku. Kamu punya cara unik dalam melihat dunia.',
+                'Kamu selalu ada saat dibutuhkan, tanpa pernah mengeluh. Itu membuatku sangat bersyukur.',
+                'Kebaikanmu mencerminkan betapa indahnya hatimu. Kamu adalah orang yang baik hati.',
+                'Kamu menerimaku apa adanya, dengan segala kekuranganku. Terima kasih sudah menjadi rumahku.',
+                'Semangatmu pada hal-hal yang kamu cintai itu sangat mengagumkan. Jangan pernah berubah.',
+                'Kehadiranmu membuat ruangan terasa lebih hangat dan nyaman. Kamu adalah cahaya dalam hidupku.',
+                'Kamu adalah cewek terbaik yang pernah aku miliki, dan aku sangat bersyukur. Aku mencintaimu.',
+                'Matamu selalu berbinar saat bercerita tentang hal yang kamu suka — itu membuatku jatuh cinta lagi.',
+                'Kamu adalah alasan aku tersenyum setiap hari. Hanya dengan memikirkanmu, hatiku berbunga-bunga.'
+            ];
+
+            const jarWrap = $('pjarSvgWrap');
+            const jarSvg = $('pjarSvg');
+            const shakeBtn = $('pjarShakeBtn');
+            const modalOverlay = $('pjarModalOverlay');
+            const modalText = $('pjarModalText');
+            const modalNumber = $('pjarModalNumber');
+            const modalCounter = $('pjarModalCounter');
+            const modalClose = $('pjarModalClose');
+
+            if (!jarWrap || !shakeBtn) return;
+
+            const jstate = { openedReasons: new Set(), reasonCount: 0, isShaking: false };
+
+            function showReason() {
+                const available = REASONS.filter((_, i) => !jstate.openedReasons.has(i));
+                if (available.length === 0) {
+                    modalText.textContent = 'You have seen all the reasons! 💕 You are everything to me. ❤️';
+                    modalNumber.textContent = '✨';
+                    modalCounter.textContent = 'All done! 🎉';
+                    modalOverlay.classList.remove('hidden');
+                    return;
+                }
+                let idx, attempts = 0;
+                do {
+                    idx = Math.floor(Math.random() * REASONS.length);
+                    attempts++;
+                } while (jstate.openedReasons.has(idx) && attempts < 50);
+                if (jstate.openedReasons.has(idx)) {
+                    for (let i = 0; i < REASONS.length; i++) {
+                        if (!jstate.openedReasons.has(i)) { idx = i; break; }
+                    }
+                }
+                jstate.openedReasons.add(idx);
+                jstate.reasonCount++;
+                modalText.textContent = REASONS[idx];
+                modalNumber.textContent = `#${jstate.reasonCount}`;
+                modalCounter.textContent = `${jstate.reasonCount} of ${REASONS.length}`;
+                modalOverlay.classList.remove('hidden');
+            }
+
+            function shakeJar() {
+                if (jstate.isShaking) return;
+                jstate.isShaking = true;
+
+                jarWrap.animate([
+                    { transform: 'rotate(0deg)' },
+                    { transform: 'rotate(-8deg)' },
+                    { transform: 'rotate(8deg)' },
+                    { transform: 'rotate(-6deg)' },
+                    { transform: 'rotate(6deg)' },
+                    { transform: 'rotate(-3deg)' },
+                    { transform: 'rotate(3deg)' },
+                    { transform: 'rotate(0deg)' }
+                ], { duration: 600, easing: 'ease-in-out' });
+
+                const notes = jarSvg.querySelectorAll('rect');
+                notes.forEach((note, i) => {
+                    note.animate([
+                        { transform: 'rotate(0deg) translate(0,0)' },
+                        { transform: `rotate(${(i % 2 === 0 ? -4 : 4)}deg) translate(${(i % 2 === 0 ? -2 : 2)}px, ${(i % 3 === 0 ? -2 : 2)}px)` },
+                        { transform: `rotate(${(i % 2 === 0 ? 3 : -3)}deg) translate(${(i % 2 === 0 ? 2 : -2)}px, ${(i % 3 === 0 ? 2 : -2)}px)` },
+                        { transform: 'rotate(0deg) translate(0,0)' }
+                    ], { duration: 600, easing: 'ease-in-out', delay: i * 20 });
+                });
+
+                shakeBtn.disabled = true;
+                shakeBtn.textContent = 'SHAKING...';
+
+                const rect = jarWrap.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
+                const emojis = ['🕷️', '🕸️', '❤️', '💙', '✨', '🌸', '🌸'];
+
+                for (let i = 0; i < 14; i++) {
+                    setTimeout(() => {
+                        const el = document.createElement('span');
+                        el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                        el.style.cssText = `
+                            position: fixed;
+                            left: ${cx + (Math.random() - 0.5) * 70}px;
+                            top: ${cy + (Math.random() - 0.5) * 50}px;
+                            font-size: ${16 + Math.random() * 20}px;
+                            pointer-events: none;
+                            z-index: 9998;
+                            animation: pjarHeartPop 0.9s ease-out forwards;
+                            --tx: ${(Math.random() - 0.5) * 130}px;
+                            --ty: ${-40 - Math.random() * 90}px;
+                        `;
+                        document.body.appendChild(el);
+                        setTimeout(() => el.remove(), 1000);
+                    }, i * 40);
+                }
+
+                if (!document.getElementById('pjarHeartStyle')) {
+                    const style = document.createElement('style');
+                    style.id = 'pjarHeartStyle';
+                    style.textContent = `
+                        @keyframes pjarHeartPop {
+                            0% { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
+                            100% { opacity: 0; transform: translate(var(--tx, 40px), var(--ty, -60px)) scale(0.2) rotate(40deg); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+
+                setTimeout(() => {
+                    shakeBtn.disabled = false;
+                    shakeBtn.textContent = 'SHAKE JAR';
+                    jstate.isShaking = false;
+                    showReason();
+                }, 700);
+            }
+
+            jarWrap.addEventListener('click', shakeJar);
+            shakeBtn.addEventListener('click', shakeJar);
+
+            modalClose.addEventListener('click', () => modalOverlay.classList.add('hidden'));
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) modalOverlay.classList.add('hidden');
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') modalOverlay.classList.add('hidden');
+            });
+        }
+
+        console.log('🕷️ HAPPY ANNIVERSARY DEDEE! 💕🕸️🌸');
+
+        // ===== PROTEKSI: BLOK KLIK KANAN, COPY, DRAG, & SHORTCUT DEVTOOLS =====
+        document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+        document.addEventListener('copy', function (e) { e.preventDefault(); });
+        document.addEventListener('cut', function (e) { e.preventDefault(); });
+        document.addEventListener('dragstart', function (e) { e.preventDefault(); });
+        document.addEventListener('selectstart', function (e) { e.preventDefault(); });
+        document.addEventListener('keydown', function (e) {
+            var k = e.key ? e.key.toLowerCase() : '';
+            var blockedCombo = (e.ctrlKey || e.metaKey) && ['c', 'x', 'u', 's', 'p', 'a'].indexOf(k) !== -1;
+            var blockedFn = (k === 'f12') || ((e.ctrlKey || e.metaKey) && e.shiftKey && ['i', 'j', 'c'].indexOf(k) !== -1);
+            if (blockedCombo || blockedFn) { e.preventDefault(); }
+        });
+    </script>
+</body>
+</html>
