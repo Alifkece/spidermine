@@ -23,9 +23,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
-img,video{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
-button,a,input,textarea,select,[onclick],[role="button"]{pointer-events:auto!important;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-touch-callout:default}
+/* ===== PROTEKSI TERBATAS: TEKS gak bisa diseleksi/copy, GAMBAR & VIDEO gak bisa di-drag/save. Tombol/area klik TIDAK disentuh. ===== */
+p,h1,h2,h3,h4,h5,h6,span,li,blockquote,label,small,strong,em,b,i{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+img,video{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none}
 :root{
   --primary:#F8A4B8;--primary-dark:#E8839A;--primary-light:#FFDDE6;
   --secondary:#A8D8EA;--text-dark:#4A3F5C;--text-soft:#7A6F8C;
