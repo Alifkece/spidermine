@@ -34,15 +34,15 @@
             --web-silver: #C8D4F0;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; }
-        img, video { -webkit-user-drag: none; user-drag: none; }
-        button, a, input, textarea, select, .pin-btn, .pin-pad, [onclick], [role="button"] {
-            pointer-events: auto !important;
-            touch-action: manipulation;
-            cursor: pointer;
-            -webkit-user-select: none; user-select: none;
-            -webkit-touch-callout: default;
+        /* ===== PROTEKSI TERBATAS: TEKS gak bisa diseleksi/copy, GAMBAR & VIDEO gak bisa di-drag/save. Tombol/area klik TIDAK disentuh. ===== */
+        p, h1, h2, h3, h4, h5, h6, span, li, blockquote, label, small, strong, em, b, i, dt, dd, td, th {
+            -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
         }
+        img, video {
+            -webkit-user-drag: none; user-drag: none;
+            -webkit-touch-callout: none;
+        }
+
         html { scroll-behavior: smooth; }
         body {
             background:
@@ -3136,6 +3136,8 @@ if (isVideo) {
     video.loop = true;
     video.playsInline = true;
     video.controls = true;
+    video.setAttribute('controlsList', 'nodownload noremoteplayback');
+    video.disablePictureInPicture = true;
     video.setAttribute('playsinline', '');
     photoDiv.appendChild(video);
 
